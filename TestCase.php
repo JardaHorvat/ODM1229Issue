@@ -41,6 +41,7 @@ class TestCase
 		$this->dm->persist( $a );
 		$this->dm->persist( $b );
 		$this->dm->flush();
+		$this->dm->clear();
 
 		return array( $a, $b );
 	}
@@ -66,6 +67,7 @@ class TestCase
 		$this->dm->persist( $a );
 		$this->dm->persist( $b );
 		$this->dm->flush();
+		$this->dm->clear();
 
 		return array( $a, $b );
 	}
@@ -107,6 +109,7 @@ class TestCase
 				$b->addFile( $file );
 
 				$this->dm->flush();
+				$this->dm->clear();
 
 				return array( $a, $b );
 			}
@@ -132,6 +135,7 @@ class TestCase
 				$b->addFile( $file );
 
 				$this->dm->flush();
+				$this->dm->clear();
 
 				return array( $a, $b );
 			}
